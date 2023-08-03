@@ -20,6 +20,7 @@ btn1.addEventListener("click", function(){
     tg.MainButton.setText("Установить стиль 1990s");
     item = "1";
     tg.MainButton.show();
+    tg.sendData(item);
   }
 });
 
