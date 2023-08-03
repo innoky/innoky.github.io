@@ -22,7 +22,7 @@ btn1.addEventListener("click", function(){
 });
 
 btn2.addEventListener("click", function(){
-    tg.MainButton.setText("Установить стиль Concept");
+    tg.MainButton.setText("Установить стиль Magazine");
     item = "2";
     tg.MainButton.show();
 });
@@ -34,8 +34,14 @@ btn3.addEventListener("click", function(){
 });
 
 btn4.addEventListener("click", function(){
-    tg.MainButton.setText("Установить стиль Manga");
+    tg.MainButton.setText("Установить стиль Nobody");
     item = "4";
+    tg.MainButton.show();
+})
+
+btn5.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Rage");
+    item = "5";
     tg.MainButton.show();
 })
 
