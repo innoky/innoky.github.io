@@ -21,7 +21,7 @@ btn1.addEventListener("click", function(){
     item = "1";
     tg.MainButton.show();
   }
-})
+});
 
 btn2.addEventListener("click", function(){
   if (tg.MainButton.isVisible){
@@ -32,7 +32,7 @@ btn2.addEventListener("click", function(){
     item = "2";
     tg.MainButton.show();
   }
-})
+});
 btn3.addEventListener("click", function(){
   if (tg.MainButton.isVisible){
     tg.MainButton.hide();
@@ -42,7 +42,7 @@ btn3.addEventListener("click", function(){
     item = "3";
     tg.MainButton.show();
   }
-})
+});
 btn4.addEventListener("click", function(){
   if (tg.MainButton.isVisible){
     tg.MainButton.hide();
@@ -52,8 +52,8 @@ btn4.addEventListener("click", function(){
     item = "4";
     tg.MainButton.show();
   }
-})
+});
 
 Telegram.WebApp.OnEvent("mainButtonClicked", function(){
   tg.sendData(item);
-})
+});
