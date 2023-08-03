@@ -10,6 +10,7 @@ let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
+let btn5 = document.getElementById("btn5");
 
 tg.MainButton.setText("Выберите стиль");
 tg.MainButton.show();
@@ -37,13 +38,13 @@ btn4.addEventListener("click", function(){
     tg.MainButton.setText("Установить стиль Nobody");
     item = "4";
     tg.MainButton.show();
-})
+});
 
 btn5.addEventListener("click", function(){
     tg.MainButton.setText("Установить стиль Rage");
     item = "5";
     tg.MainButton.show();
-})
+});
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
   tg.sendData(item);
