@@ -1,5 +1,5 @@
 body {
-  background-color: #181818;
+  background-color: var(--tg-theme-bg-color);
   margin: 0;
   padding: 0;
 }
@@ -38,6 +38,7 @@ h1 {
   width: calc(100% - 100px);
   height: 33.33vh; /* Изменено на 33.33% */
   margin-bottom: 40px;
+  max-width: 70%;
   border-radius: 100px;
   overflow: hidden;
 
