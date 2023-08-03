@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 160px;
+  padding-top: 130px;
   overflow: hidden;
 }
 
@@ -21,9 +21,8 @@ h1 {
   left: 0;
   right: 0;
   z-index: 2;
-  font-size: 60px;
+  font-size: 26px;
   margin: 0;
-  font-family: 'REM-VariableFont_wght';
   background-color: white;
   color: #FFFFFF;
   padding: 30px 30px;
@@ -59,8 +58,6 @@ h1 {
 }
 
 .image-block img:hover {
-  border-radius: 20px;
-  transform: scale(0.95);
-  outline: 5px solid green;
+  transform: scale(0.9);
 
 }

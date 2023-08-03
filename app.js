@@ -1,6 +1,5 @@
 let tg = window.Telegram.WebApp;
 
-tg.expand()
 
 tg.MainButton.textColor ="#FFFFFF";
 tg.MainButton.color = "#2cab37";
@@ -12,49 +11,32 @@ let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
 
+tg.MainButton.setText("Выберите стиль");
+tg.MainButton.show();
+
 btn1.addEventListener("click", function(){
-  if (tg.MainButton.isVisible){
-    tg.MainButton.hide();
-  }
-  else {
+
     tg.MainButton.setText("Установить стиль 1990s");
     item = "1";
     tg.MainButton.show();
-    tg.sendData(item);
-  }
 });
 
 btn2.addEventListener("click", function(){
-  if (tg.MainButton.isVisible){
-    tg.MainButton.hide();
-  }
-  else {
     tg.MainButton.setText("Установить стиль Concept");
     item = "2";
     tg.MainButton.show();
-  }
 });
 
 btn3.addEventListener("click", function(){
-  if (tg.MainButton.isVisible){
-    tg.MainButton.hide();
-  }
-  else {
     tg.MainButton.setText("Установить стиль Pop Figure");
     item = "3";
     tg.MainButton.show();
-  }
 });
 
 btn4.addEventListener("click", function(){
-  if (tg.MainButton.isVisible){
-    tg.MainButton.hide();
-  }
-  else {
     tg.MainButton.setText("Установить стиль Manga");
     item = "4";
     tg.MainButton.show();
-  }
 })
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
