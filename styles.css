@@ -1,0 +1,53 @@
+body {
+  background-color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px; /* Добавлено для учета высоты надписи */
+}
+
+<h1>
+  position: fixed; /* Изменено на fixed */
+  top: 0; /* Изменено на 0 */
+  left: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 24px;
+  margin: 0;
+  background-color: white;
+  color: #333333;
+  padding: 10px 20px;
+</h1>
+
+.image-block {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 40px);
+  height: 25vh;
+  margin-bottom: 20px;
+}
+
+.image-block a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.image-block img:hover {
+  transform: scale(0.95);
+}
