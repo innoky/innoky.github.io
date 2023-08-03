@@ -17,7 +17,7 @@ btn1.addEventListener("click", function(){
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Установить стиль 1990s")
+    tg.MainButton.setText("Установить стиль 1990s");
     item = "1";
     tg.MainButton.show();
   }
@@ -28,32 +28,34 @@ btn2.addEventListener("click", function(){
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Установить стиль Concept")
+    tg.MainButton.setText("Установить стиль Concept");
     item = "2";
     tg.MainButton.show();
   }
 });
+
 btn3.addEventListener("click", function(){
   if (tg.MainButton.isVisible){
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Установить стиль Pop Figure")
+    tg.MainButton.setText("Установить стиль Pop Figure");
     item = "3";
     tg.MainButton.show();
   }
 });
+
 btn4.addEventListener("click", function(){
   if (tg.MainButton.isVisible){
     tg.MainButton.hide();
   }
   else {
-    tg.MainButton.setText("Установить стиль Manga")
+    tg.MainButton.setText("Установить стиль Manga");
     item = "4";
     tg.MainButton.show();
   }
-});
+})
 
-Telegram.WebApp.OnEvent("mainButtonClicked", function(){
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
   tg.sendData(item);
 });
