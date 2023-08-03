@@ -21,7 +21,7 @@ h1 {
   left: 0;
   right: 0;
   z-index: 2;
-  font-size: 60px;
+  font-size: 26px;
   margin: 0;
   font-family: 'REM-VariableFont_wght';
   background-color: white;
@@ -39,7 +39,7 @@ h1 {
   height: 33.33vh; /* Изменено на 33.33% */
   margin-bottom: 40px;
   max-width: 70%;
-  border-radius: 100px;
+  border-radius: 20px;
   overflow: hidden;
 
 }
@@ -60,7 +60,7 @@ h1 {
 }
 
 .image-block img:hover {
-  border-radius: 100px;
+  border-radius: 20px;
   transform: scale(0.95);
   outline: 5px solid green;
 }
