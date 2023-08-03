@@ -69,6 +69,7 @@ h1 {
 .image-block a {
   display: block;
   width: 100%;
+  object-fit: cover;
   height: 100%;
   outline: none;
   -webkit-tap-highlight-color: transparent;
