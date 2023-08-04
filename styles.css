@@ -15,7 +15,7 @@ body {
   overflow: hidden;
 }
 .tx2 {
-  margin-top: 77px;
+  margin-top: 47px;
   margin-left: 20px;
 }
 .tx1{
@@ -33,8 +33,8 @@ p {
   margin: 0;
   z-index: 1
   background-color: white;
-  color: #FFFFFF;
-  padding: 30px 30px;
+  color: var(--tg-theme-text-color);
+  padding: 10px 10px;
   background-color: #181818;
   text-align: left;
   font-family: Arial, sans-serif;
@@ -48,8 +48,8 @@ h1 {
   font-size: 26px;
   margin: 0;
   background-color: white;
-  color: #FFFFFF;
-  padding: 30px 30px;
+  color: var(--tg-theme-text-color);
+  padding: 10px 10px;
   background-color: #181818;
   text-align: left;
   font-family: Arial, sans-serif;
@@ -86,7 +86,6 @@ h1 {
 
 .image-block img:hover {
   transform: scale(0.9);
-  outline: 14px solid green;
   border-radius: 50px;
 
 }
