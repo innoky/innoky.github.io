@@ -14,7 +14,7 @@
 	color:var(--tg-theme-text-color);
 }
 .u-menu-1{
-	color:black;
+	color:var(--tg-theme-text-color);
 }
 .u-section-1 .u-image-1 {
   width: 170px;
