@@ -11,6 +11,13 @@ let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
 let btn5 = document.getElementById("btn5");
+let btn5 = document.getElementById("btn6");
+let btn5 = document.getElementById("btn7");
+let btn5 = document.getElementById("btn8");
+let btn5 = document.getElementById("btn9");
+let btn5 = document.getElementById("btn10");
+let btn5 = document.getElementById("btn11");
+let btn5 = document.getElementById("btn12");
 
 tg.MainButton.setText("Выберите стиль");
 tg.MainButton.show();
@@ -43,6 +50,48 @@ btn4.addEventListener("click", function(){
 btn5.addEventListener("click", function(){
     tg.MainButton.setText("Установить стиль Rage");
     item = "5";
+    tg.MainButton.show();
+});
+
+btn6.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Horror");
+    item = "6";
+    tg.MainButton.show();
+});
+
+btn7.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Pixel");
+    item = "7";
+    tg.MainButton.show();
+});
+
+btn8.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль 3DRM");
+    item = "8";
+    tg.MainButton.show();
+});
+
+btn9.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Manga");
+    item = "9";
+    tg.MainButton.show();
+});
+
+btn10.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Niji");
+    item = "10";
+    tg.MainButton.show();
+});
+
+btn11.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Concept");
+    item = "11";
+    tg.MainButton.show();
+});
+
+btn12.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Pastel");
+    item = "12";
     tg.MainButton.show();
 });
 
