@@ -18,6 +18,8 @@ let btn9 = document.getElementById("btn9");
 let btn10 = document.getElementById("btn10");
 let btn11 = document.getElementById("btn11");
 let btn12 = document.getElementById("btn12");
+let btn13 = document.getElementById("btn13");
+let btn14 = document.getElementById("btn14");
 
 tg.MainButton.setText("Выберите стиль");
 tg.MainButton.show();
@@ -92,6 +94,18 @@ btn11.addEventListener("click", function(){
 btn12.addEventListener("click", function(){
     tg.MainButton.setText("Установить стиль Pastel");
     item = "12";
+    tg.MainButton.show();
+});
+
+btn13.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Poster");
+    item = "13";
+    tg.MainButton.show();
+});
+
+btn14.addEventListener("click", function(){
+    tg.MainButton.setText("Установить стиль Shapes");
+    item = "14";
     tg.MainButton.show();
 });
 
