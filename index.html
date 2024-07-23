@@ -25,9 +25,7 @@
   <!-- CUSTOMER -->
   <script>
     if (window.screen.availWidth > 500){
-      function getRandomInt(max) {
-      return Math.floor(Math.random() * max);
-    }
+      
     let cursor = document.querySelector('#cursor');
     let scrl = 0;
     window.onscroll = function (e) {
@@ -55,6 +53,24 @@
     })
     } else{
       document.getElementById("cursor").hidden = true;
+      let scrl = 0;
+    window.onscroll = function (e) {
+      scrl = (window.scrollY); // Value of scroll Y in px
+    };
+ 
+    document.addEventListener('scroll', (evrnt) => {
+      if (scrl < 100){
+      
+      document.getElementById("nav_menu_div").style.opacity = '0'
+    } else if ( 100 <= scrl <= 300){
+
+      document.getElementById("nav_menu_div").style.opacity = (scrl-100)/200 + "";
+    } else{
+   
+      document.getElementById("nav_menu_div").style.opacity = "1.0";
+    }
+
+    })
     }
     
   </script>
