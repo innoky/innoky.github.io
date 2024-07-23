@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+
+  <title>Romanov</title>
+
+
+  <link
+  href="fonts/ConnectionII.otf"
+  rel="stylesheet"
+  type="text/css" />
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  <nav class="sticky">
+    <div id="nav_menu_div">
+      <p id="nav_menu_title">&lt;R&gt;</p>
+    </div>
+  </nav>
+  <div id="cursor" class="mobile-hide"></div>
+  <!-- CUSTOMER -->
+  <script>
+    if (window.screen.availWidth > 500){
+      function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+    let cursor = document.querySelector('#cursor');
+    let scrl = 0;
+    window.onscroll = function (e) {
+      scrl = (window.scrollY); // Value of scroll Y in px
+    };
+ 
+    document.addEventListener('scroll', (evrnt) => {
+      if (scrl < 100){
+      
+      document.getElementById("nav_menu_div").style.opacity = '0'
+    } else if ( 100 <= scrl <= 300){
+
+      document.getElementById("nav_menu_div").style.opacity = (scrl-100)/200 + "";
+    } else{
+   
+      document.getElementById("nav_menu_div").style.opacity = "1.0";
+    }
+
+    })
+    
+    
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.top = e.pageY - scrl + 'px' ;
+      cursor.style.left = e.pageX + 'px';
+    })
+    } else{
+      document.getElementById("cursor").hidden = true;
+    }
+    
+  </script>
+  
+  <div id="realative-canvas" class="static">
+    <div id="bg-text-canvas" >
+      <p id="bg-text"></p>
+      <marquee id="aboutme" scrolldelay="1" scrollamount="13">ТЕКУЩЕЕЕ МЕСТО ОБУЧЕНИЯ (99.9%) - НИЯУ МИФИ | НАПРАВЛЕНИЕ - ПРОГРАММНАЯ ИНЖЕНЕРИЯ | ПРОГРАММА - ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ И МОДЕЛИРОВАНИЕ КОГНИТИВНЫХ ПРОЦЕССОВ В ПРОЕКТИРОВАНИИ И РАЗРАБОТКЕ ИНФОРМАЦИОННЫХ СИСТЕМ |   </marquee>
+      <marquee id="running_line" scrolldelay="1" scrollamount="10"></marquee>
+      <marquee id="about_site" scrolldelay="1" scrollamount="7">САЙТ СОЗДАН БЕЗ ИСПОЛЬЗОВАНИЯ КОНСТРУКТОРА. ПРИ СОЗДАНИИ ИСПОЛЬЗОВАЛСЯ ТОЛЬКО HTML, CSS и JS</marquee>
+      <script>
+        let line = "01110100 01110110 01101110 01101010 01110011 01100110 00100000 01101101 01110110 01101110 01101010 01110100 00100000 01100101 01110000 01110110 01110010 00100000 01110000 01100101 01100110 01110011 01100100 00100000 01101111 01100110 01101110 01100010 01110101 00100000 00101100 01101110 01100110 01101111 01101010 01100101 01110110 01110101 01101010 01110011 01101001 01100100 01101101 01110110 01110001 00100000 01100110 01101111 01101010 01110011 01100100 00100000 01101110 01110110 01110011 01101000 01101010 01101111"
+        document.getElementById('running_line').innerText = (line).repeat(40);
+      </script>
+    </div>
+    <div id="inside_block_1">
+      <div id="title_container">
+        <p id="TITLE" class="noselect">Romanov</p>
+        <script>
+          let off_on = 0;
+          function editUnderline(){
+            let sec_interval = setTimeout(
+              () => {
+                if (off_on == 1){
+                  document.getElementById("TITLE").innerText = "Romanov";
+                  off_on = 0;
+                }
+                else {
+                  document.getElementById("TITLE").innerText = "Romanov|";
+                  off_on = 1;
+                }
+  
+                editUnderline();
+              }, 500)
+            }
+            editUnderline();
+        </script>
+      </div>
+      
+      <p id='ABOUT' class="noselect">Здравствуйте, Меня зовут Иннокентий! Добро пожаловать на мой сайт-визитку!<br> Я студент-программист (ну почти). Увлекаюсь различными сферами программирования и на данный момент мне предстоит обучение на первом курсе Московского инженерно-физического института. <br>На этом сайте вы найдете всю информацию о моих проектах/достижениях. Найдете ссылки на мои медиа ресурсы, github репозитории.</p>
+      
+    </div>
+  </div>
+  <!-- BODY  -->
+ 
+  <!--  -->
+
+  
+  
+  <div id="sec_div">
+    <div>
+      <div id="bg-text-canvas_2">
+        
+      </div>
+      <div id="inside_block_2">
+        <p id="sec_about">EMPTY BITs YET</p>
+      </div>
+    </div>
+
+  </div>
+  <!--  -->
+  
+  
+
+
+</body>
+</html>
