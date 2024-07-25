@@ -127,16 +127,25 @@ body
     z-index: 2;
     margin-top: -100vh;
 }
+#alpha_stable {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 40px;
+    font-family: 'visitor';
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
 #nav_menu_title{
     color: white;
-    text-align: center;
     font-family: 'Connection';
-    padding-top: 5px;
+    text-align: center;
+    padding-top: 15px;
     font-size: 40px;
 }
 #nav_menu_div{
     background-color: black;
-    height: 50px;
+    height: 70px;
     opacity: 0;
 }
 
@@ -152,6 +161,7 @@ body
 #bg-text {
     color: #d599e49d;
     font-size: 20px;
+    
 }
 #bg-text-canvas {
     z-index: -2;
@@ -170,8 +180,9 @@ body
     z-index: -2;
     position: relative;
     margin: 30px;
-    text-align: center;
+   
     display: block;
+    word-break: break-all;
     height: 90vh;
     background-color: #1C221A;
     border-radius: 15px;
@@ -179,10 +190,14 @@ body
     font-size: 40px;
 }
 
-#sec_about {
-    color: white;
-    vertical-align: middle;
+#bg-text-2{
+    color: rgba(255, 255, 255, 0.321);
+    font-size: 20px;
+    overflow-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+
 #sec_div {
     height: 60vh;
 }

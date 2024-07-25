@@ -57,16 +57,12 @@
     window.onscroll = function (e) {
       scrl = (window.scrollY); // Value of scroll Y in px
     };
- 
     document.addEventListener('scroll', (evrnt) => {
       if (scrl < 100){
-      
       document.getElementById("nav_menu_div").style.opacity = '0'
     } else if ( 100 <= scrl <= 300){
-
       document.getElementById("nav_menu_div").style.opacity = (scrl-100)/200 + "";
     } else{
-   
       document.getElementById("nav_menu_div").style.opacity = "1.0";
     }
 
@@ -74,7 +70,6 @@
     }
     
   </script>
-  
   <div id="realative-canvas" class="static">
     <div id="bg-text-canvas" >
       <p id="bg-text"></p>
@@ -123,10 +118,31 @@
   <div id="sec_div">
     <div>
       <div id="bg-text-canvas_2">
-        
+        <p id="bg-text-2" class="noselect"></p>
+        <script>
+          let el = document.getElementById("bg-text-2")
+
+          let i = 0;
+
+          const update = () => {
+            setTimeout(function(){
+              var abc = ['prompt    ','/balance    ', "1boy, black hair    ", "GENERATE    ","ALPHASTABLE","A man with brown short hair, wearing a white shirt and gray jeans, sits at a white table on an orange chair.","1girl, threads, black hair, short hair, bangs, green eyes, dark atmosphere, lolita dress, bows, doll joints, joints, glass greenhouse, plants, leaves","\n\n","\n" ,"Stable Diffusion", "tokens", "/AlphaShare", "/gift" , "\n", "    ",  "    "];
+              var rs = "";
+              while (rs.length < 1000){
+                rs += abc[Math.floor(Math.random()*abc.length)];
+              }
+
+              el.innerText = rs.repeat(15);
+              requestAnimationFrame(update, 10000)
+            }, 200);
+          }
+
+          requestAnimationFrame(update, 10000)
+        </script>
       </div>
       <div id="inside_block_2">
-        <p id="sec_about">EMPTY BITs YET</p>
+        <p id="sec_about" class="noselect">AlphaStable</p>
+        <p id="alpha_stable">Скоро тут будет информация об этом проекте</p>
       </div>
     </div>
 
